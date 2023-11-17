@@ -63,7 +63,7 @@ export default function Home() {
         <div className="mb-4 flex items-center justify-center flex-col">
           <h2 className="text-2xl font-bold mb-3">Registrations</h2>
           <div className="flex space-x-2">
-            {String(Math.floor(registrations / 2)).split('').map((digit, index) => (
+            {String(Math.floor(registrations)).split('').map((digit, index) => (
               <div key={index} className="bg-gray-700 p-4 rounded text-4xl font-bold text-center">
                 {digit}
               </div>
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
         </div>
         <div className='text-center'>
-          <h3 className="text-xl font-semibold">Approved: <span id="approvedCount">{approved / 2}</span></h3>
+          <h3 className="text-xl font-semibold">Approved: <span id="approvedCount">{approved}</span></h3>
         </div>
       </div>
     </div>
